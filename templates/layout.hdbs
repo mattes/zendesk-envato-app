@@ -1,0 +1,10 @@
+<header>
+  <span class="logo"/>
+  <h3>Envato</h3>
+</header>
+
+<form id="purchase-code-query">
+  <input type="text" id="purchase_code" name="purchase_code" placeholder="Type purchase code and press enter ..." />
+</form>
+
+<section data-main />

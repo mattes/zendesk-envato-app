@@ -1,0 +1,11 @@
+#purchase-code-query input {
+  width: 97%;
+}
+
+.failed, .loading {
+  margin-top: 10px;
+}
+
+.loading .spinner {
+  text-align: center;
+}

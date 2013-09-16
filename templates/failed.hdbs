@@ -1,0 +1,3 @@
+<div class="failed alert alert-error">
+  {{message}}
+</div>

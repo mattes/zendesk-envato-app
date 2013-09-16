@@ -1,0 +1,21 @@
+{
+  "app": {
+    "description": "Access bookmarked tickets from our iPad & iPhone app"
+  },
+  "fetch": {
+    "fail": "Error retrieving bookmarks",
+    "try_again": "Try again"
+  },
+  "add": {
+    "done": "Bookmarked ticket #{{id}}",
+    "failed": "Failed to bookmark ticket #{{id}}"
+  },
+  "destroy": {
+    "done": "Bookmark deleted",
+    "failed": "Failed to delete bookmark"
+  },
+  "bookmark_this_ticket": "Bookmark this ticket",
+  "delete_bookmark": "Delete bookmark",
+  "loading": "Loading",
+  "none": "No bookmarks"
+}

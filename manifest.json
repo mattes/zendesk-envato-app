@@ -1,0 +1,25 @@
+{
+  "author": {
+    "name": "Oxford-Themes",
+    "email": "support@oxford-themes.com"
+  },
+
+  "location": ["ticket_sidebar","new_ticket_sidebar"],
+  "defaultLocale": "en",
+  "private": false,
+  "singleInstall": true,
+  "frameworkVersion": "0.5",
+
+  "parameters": [
+    {
+      "name": "username",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "api_key",
+      "type": "text",
+      "required": true
+    }
+  ]
+}
