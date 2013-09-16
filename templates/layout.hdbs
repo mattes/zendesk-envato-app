@@ -4,7 +4,7 @@
 </header>
 
 <form id="purchase-code-query">
-  <input type="text" id="purchase_code" name="purchase_code" placeholder="Type purchase code and press enter ..." />
+  <input type="text" id="purchase_code" name="purchase_code" placeholder="{{t "purchase_code.placeholder"}}" />
 </form>
 
 <section data-main />

@@ -23,7 +23,7 @@
             });
           } else {
             this.switchTo('failed', {
-              message: 'Please type purchase code.'
+              message: this.I18n.t('purchase_code.type_purchase_code')
             });
           }
 

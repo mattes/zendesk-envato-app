@@ -1,8 +1,7 @@
 <div class="loading">
   <div class="alert alert-info">
-    Verifying {{purchase_code}} for {{username}} ...
+    {{t "global.loading" purchase_code=purchase_code username=username}}
   </div>
 
   <div class="spinner">{{spinner "dotted"}}</div>
 </div>
-

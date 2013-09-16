@@ -1,21 +1,12 @@
 {
   "app": {
-    "description": "Access bookmarked tickets from our iPad & iPhone app"
+    "description": "Envato Zendesk Integration"
   },
-  "fetch": {
-    "fail": "Error retrieving bookmarks",
-    "try_again": "Try again"
+  "global": {
+    "loading": "Verifying {{purchase_code}} for {{username}} ..."
   },
-  "add": {
-    "done": "Bookmarked ticket #{{id}}",
-    "failed": "Failed to bookmark ticket #{{id}}"
-  },
-  "destroy": {
-    "done": "Bookmark deleted",
-    "failed": "Failed to delete bookmark"
-  },
-  "bookmark_this_ticket": "Bookmark this ticket",
-  "delete_bookmark": "Delete bookmark",
-  "loading": "Loading",
-  "none": "No bookmarks"
+  "purchase_code": {
+    "placeholder": "Type purchase code and press enter ...",
+    "type_purchase_code": "Please type purchase code."
+  }
 }
