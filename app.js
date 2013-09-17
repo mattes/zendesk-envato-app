@@ -40,11 +40,11 @@
           if(data.hasOwnProperty('verify-purchase')) {
             if(data['verify-purchase'].hasOwnProperty('item_id')) {
               this.switchTo('verify_purchase_code_result', {
-                item_name: data['verify-purchase']['item_name'],
-                item_id: data['verify-purchase']['item_id'],
-                created_at: data['verify-purchase']['created_at'],
-                buyer: data['verify-purchase']['buyer'],
-                licence: data['verify-purchase']['licence']
+                item_name: data['verify-purchase'].item_name,
+                item_id: data['verify-purchase'].item_id,
+                created_at: data['verify-purchase'].created_at,
+                buyer: data['verify-purchase'].buyer,
+                licence: data['verify-purchase'].licence
               });
             }
             else {
