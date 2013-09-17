@@ -51,7 +51,7 @@
             }
             else {
               this.switchTo('failed', {
-                message: 'Invalid purchase code.'
+                message: this.I18n.t('invalid_purchase_code')
               });
             }
           }
@@ -62,19 +62,19 @@
           }
           else {
             this.switchTo('failed', {
-              message: 'API did not retun verification, nor any error code.'
+              message: this.I18n.t('no_return_no_code')
             });
           }
         } else {
           this.switchTo('failed', {
-            message: 'API did not return any data.'
+            message: this.I18n.t('no_data')
           });
         }
       },
 
       'verify_purchase.fail': function() {
         this.switchTo('failed', {
-          message: 'Unable to contact API.'
+          message: this.I18n.t('unable_to_contact')
         });
       }
 

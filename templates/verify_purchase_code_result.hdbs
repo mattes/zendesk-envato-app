@@ -1,19 +1,19 @@
 <div class="verify-purchase-code-result">
   <table class="table">
     <tr>
-      <td>Item</td>
+      <td>{{t "purchase_code.item"}}</td>
       <td>#{{item_id}} - {{item_name}}</td>
     </tr>
     <tr>
-      <td>User</td>
+      <td>{{t "purchase_code.user"}}</td>
       <td>{{buyer}} <a href="http://themeforest.net/user/{{buyer}}" target="_blank"><i class="icon-share-alt"></i></a></td>
     </tr>
     <tr>
-      <td>License</td>
+      <td>{{t "purchase_code.license"}}</td>
       <td>{{licence}}</td>
     </tr>
     <tr>
-      <td>Date</td>
+      <td>{{t "purchase_code.date"}}</td>
       <td>{{created_at}}</td>
     </tr>
   </table>

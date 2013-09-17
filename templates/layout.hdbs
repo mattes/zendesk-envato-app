@@ -1,6 +1,6 @@
 <header>
   <span class="logo"/>
-  <h3>Envato</h3>
+  <h3>{{t "app.title"}}</h3>
 </header>
 
 <form id="purchase-code-query">
