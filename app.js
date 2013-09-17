@@ -36,8 +36,6 @@
         // {"verify-purchase":{}}
         // {"verify-purchase":{"item_name":"NAME","item_id":"ID","created_at":"Tue Feb 26 18:51:02 +1100 2013","buyer":"USERNAME","licence":"Regular License"}}
 
-        var data = {"verify-purchase":{"item_name":"NAME","item_id":"ID","created_at":"Tue Feb 26 18:51:02 +1100 2013","buyer":"USERNAME","licence":"Regular License"}}
-
         if(data) {
           if(data.hasOwnProperty('verify-purchase')) {
             if(data['verify-purchase'].hasOwnProperty('item_id')) {
@@ -51,7 +49,7 @@
             }
             else {
               this.switchTo('failed', {
-                message: this.I18n.t('invalid_purchase_code')
+                message: this.I18n.t('purchase_code.invalid_purchase_code')
               });
             }
           }
@@ -62,19 +60,19 @@
           }
           else {
             this.switchTo('failed', {
-              message: this.I18n.t('no_return_no_code')
+              message: this.I18n.t('purchase_code.no_return_no_code')
             });
           }
         } else {
           this.switchTo('failed', {
-            message: this.I18n.t('no_data')
+            message: this.I18n.t('purchase_code.no_data')
           });
         }
       },
 
       'verify_purchase.fail': function() {
         this.switchTo('failed', {
-          message: this.I18n.t('unable_to_contact')
+          message: this.I18n.t('purchase_code.unable_to_contact')
         });
       }
 
