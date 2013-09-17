@@ -1,4 +1,5 @@
 (function() {
+
   return {
     requests: {
       verify_purchase: function(purchase_code){
@@ -31,13 +32,28 @@
       },
 
       'verify_purchase.done': function(data) {
-        console.log(data);
+        // example responses:
+        // {"verify-purchase":{}}
+        // {"verify-purchase":{"item_name":"NAME","item_id":"ID","created_at":"Tue Feb 26 18:51:02 +1100 2013","buyer":"USERNAME","licence":"Regular License"}}
+
+        var data = {"verify-purchase":{"item_name":"NAME","item_id":"ID","created_at":"Tue Feb 26 18:51:02 +1100 2013","buyer":"USERNAME","licence":"Regular License"}}
 
         if(data) {
-          if(data.hasOwnProperty('peng')) {
-            this.switchTo('verify_purchase_code_result', {
-              data: data
-            });
+          if(data.hasOwnProperty('verify-purchase')) {
+            if(data['verify-purchase'].hasOwnProperty('item_id')) {
+              this.switchTo('verify_purchase_code_result', {
+                item_name: data['verify-purchase']['item_name'],
+                item_id: data['verify-purchase']['item_id'],
+                created_at: data['verify-purchase']['created_at'],
+                buyer: data['verify-purchase']['buyer'],
+                licence: data['verify-purchase']['licence']
+              });
+            }
+            else {
+              this.switchTo('failed', {
+                message: 'Invalid purchase code.'
+              });
+            }
           }
           else if(data.hasOwnProperty('error')) {
             this.switchTo('failed', {
