@@ -12,6 +12,10 @@
     "invalid_purchase_code": "Invalid purchase code.",
     "no_return_no_code": "API did not retun verification, nor any error code.",
     "no_data": "API did not return any data.",
-    "unable_to_contact": "Unable to contact API."
+    "unable_to_contact": "Unable to contact API.",
+    "item": "Item",
+    "user": "User",
+    "license": "License",
+    "date": "Date"
   }
 }
