@@ -15,8 +15,8 @@
         if(event.which == 13) {
           // enter pressed
           event.preventDefault();
-          purchase_code = this.$(event.target).val();
-          if(purchase_code != '') {
+          var purchase_code = this.$(event.target).val();
+          if(purchase_code && purchase_code !== '') {
             this.ajax('verify_purchase', purchase_code);
             this.switchTo('loading', {
               purchase_code: purchase_code,
